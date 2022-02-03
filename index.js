@@ -10,3 +10,5 @@ app.use(views(
   path.join(__dirname, config.get('views.path')),
   config.get('views.options')
 ))
+//in index.js
+app.use(serve(config.get('static.path')))
