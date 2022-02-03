@@ -21,3 +21,7 @@ app.use(async (ctx, next) => {
   await next() 
 })
 
+// in index.js
+const port = process.env.PORT || config.get('server.port')
+app.listen(port, () => { console.log(`Application started - listening on port ${port}`) })
+
