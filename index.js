@@ -14,18 +14,17 @@ app.use(views(
   path.join(__dirname, config.get('views.path')),
   config.get('views.options')
 ))
-//in index.js
-//This line uses koa-static middleware to statically serve CSS, scripts, and images
+// Serve static files (scripts, css, images)
 app.use(serve(config.get('static.path')))
 
-// in index.js
+// Hydrate ctx.state with global settings, so they are available in views
 app.use(async (ctx, next) => {
   ctx.state.settings = config.get('settings')
   ctx.state.urlWithoutQuery = ctx.origin + ctx.path
-  await next() 
+  await next()  // Pass control to the next middleware
 })
 
-// in index.js
+//Start the app
 const port = process.env.PORT || config.get('server.port')
 app.listen(port, () => { console.log(`Application started - listening on port ${port}`) })
 
