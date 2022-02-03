@@ -13,3 +13,10 @@ app.use(views(
 //in index.js
 //This line uses koa-static middleware to statically serve CSS, scripts, and images
 app.use(serve(config.get('static.path')))
+
+// in index.js
+app.use(async (ctx, next) => {
+  ctx.state.settings = config.get('settings')
+  ctx.state.urlWithoutQuery = ctx.origin + ctx.path
+  await next() 
+})
