@@ -1,5 +1,6 @@
 // First, we declare the middleware we will use
-//in index.js
+const config = require('config')
+const path = require('path')
 const Koa = require('koa')
 const Router = require('koa-router')
 // Add product data - add buy routes
@@ -7,8 +8,8 @@ const loadRoutes = require("./app/routes")
 const DataLoader = require('./app/dataLoader')
 const views = require('koa-views')
 const serve = require('koa-static')
-const path = require('path')
-const config = require('config')
+const app = new Koa()
+const router = new Router()
 // Views setup, adds render() function to ctx object
 app.use(views(
   path.join(__dirname, config.get('views.path')),
