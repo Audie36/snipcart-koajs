@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": 3000
+    },
+    "views": {
+        "path": "app/views",
+        "options": {
+            "map": {
+                "pug": "pug"
+            },
+            "extension": "pug"
+        }
+    },
+    "static":{
+        "path":"app/static"
+    },
+    "data": {
+        "path": "app/data"
+    },
+    "settings": {
+        "siteName": "Roe Jogan's podcast fundraiser",
+        "snipcartApiKey": "NjA3NmE1ZWQtOWFjYy00M2NmLTk2YjAtZTE4NGY4ZGFiOTAxNjM3Nzk0MDU1Nzg1MDI4NDYw",
+        "defaultDonation" : 25
+    }
+}
