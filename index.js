@@ -28,7 +28,7 @@ app.use(async (ctx, next) => {
 //Start the app
 const port = process.env.PORT || config.get('server.port')
 app.listen(port, () => { console.log(`Application started - listening on port ${port}`) })
-/*
+
 // Then, we will add a custom script that will read our products JSON files
 const productsLoader = new DataLoader(
   path.join(
@@ -37,6 +37,7 @@ const productsLoader = new DataLoader(
     'products')
 )
 
+/*
 //Use Middleware Koa router
 // Following Router declaration has already been done at the top
 // Router = require('koa-router')
