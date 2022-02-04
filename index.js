@@ -2,7 +2,9 @@
 const config = require('config')
 const path = require('path')
 const Koa = require('koa')
-const Router = require('koa-router')
+// Router has already been declared - Removed 'const' from Router = require & router = new Router()
+Router = require('koa-router')
+//const Router = require('koa-router')
 // Add product data - add buy routes
 const loadRoutes = require("./app/routes")
 const DataLoader = require('./app/dataLoader')
