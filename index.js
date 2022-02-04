@@ -39,7 +39,7 @@ const productsLoader = new DataLoader(
 
 //Use Middleware Koa router
 // Following Router declaration has already been done at the top
-//const Router = require('koa-router')
-const router = new Router()
+Router = require('koa-router')
+router = new Router()
 loadRoutes(router, productsLoader)
 app.use(router.routes())
