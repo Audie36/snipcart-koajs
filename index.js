@@ -4,7 +4,7 @@ const path = require('path')
 const Koa = require('koa')
 const Router = require('koa-router')
 // Add product data - add buy routes
-const loadRoutes = require("./app/routes")
+const loadRoutes = require('./app/routes')
 const DataLoader = require('./app/dataLoader')
 const views = require('koa-views')
 const serve = require('koa-static')
