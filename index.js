@@ -29,3 +29,10 @@ app.use(async (ctx, next) => {
 const port = process.env.PORT || config.get('server.port')
 app.listen(port, () => { console.log(`Application started - listening on port ${port}`) })
 
+// Then, we will add a custom script that will read our products JSON files
+const productsLoader = new DataLoader(
+  path.join(
+    __dirname,
+    config.get('data.path'),
+    'products')
+)
