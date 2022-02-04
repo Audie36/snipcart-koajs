@@ -9,7 +9,7 @@ const DataLoader = require('./app/dataLoader')
 const views = require('koa-views')
 const serve = require('koa-static')
 const app = new Koa()
-router = new Router()
+const router = new Router()
 // Views setup, adds render() function to ctx object
 app.use(views(
   path.join(__dirname, config.get('views.path')),
