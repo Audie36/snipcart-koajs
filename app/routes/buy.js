@@ -7,6 +7,8 @@ module.exports = (router, productsLoader) => {
           product: product
         }
         await ctx.render('product')
+
+        pokemon = variable;
       }
     })
   }
