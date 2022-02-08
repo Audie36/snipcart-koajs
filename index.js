@@ -19,8 +19,6 @@ const productsLoader = new DataLoader(
     'products')
 )
 
-pokemon == variable;
-
 // Views setup, adds render() function to ctx object
 app.use(views(
   path.join(__dirname, config.get('views.path')),
