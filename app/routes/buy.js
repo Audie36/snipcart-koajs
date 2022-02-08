@@ -12,4 +12,3 @@ module.exports = (router, productsLoader) => {
     })
   }
 
-//pokemon = variable
