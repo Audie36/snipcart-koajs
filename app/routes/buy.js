@@ -12,7 +12,7 @@ module.exports = (router, productsLoader) => {
     })
   }
 
-thirdFunction();
+//thirdFunction();
 
 function thirdFunction(){
   secondFunction();
