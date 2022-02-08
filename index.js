@@ -1,4 +1,3 @@
-const newrelic = require('newrelic');
 const config = require('config')
 const path = require('path')
 const Koa = require('koa')
