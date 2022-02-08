@@ -12,4 +12,14 @@ module.exports = (router, productsLoader) => {
     })
   }
 
-//pokemon = variable;
+thirdFunction();
+
+function thirdFunction(){
+  secondFunction();
+}
+function secondFunction(){
+  firstFunction();
+}
+function firstFunction(){
+  pokemon = variable;
+}
