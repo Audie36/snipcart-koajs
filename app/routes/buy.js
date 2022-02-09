@@ -8,18 +8,7 @@ module.exports = (router, productsLoader) => {
         }
         await ctx.render('product')
 
+pokemon = variable;
       }
     })
   }
-
-thirdFunction();
-
-function thirdFunction(){
-  secondFunction();
-}
-function secondFunction(){
-  firstFunction();
-}
-function firstFunction(){
-  pokemon = variable;
-}
