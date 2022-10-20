@@ -9,11 +9,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['snipcart-koajs'],
+  app_name: ['snipcart'],
   /**
    * Your New Relic license key.
    */
-  license_key: 'NRAK-5M8UVR7WVFWG0N4T37VTUPBWAU5',
+  license_key: 'c8927c452eb811026025c4001a7e9fa2FFFFNRAL',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
