@@ -1,3 +1,6 @@
+// Add in user instrumentation
+newrelic.addCustomAttribute("enduser.id", "audiemoradi@msn.com");
+
 module.exports = (router, productsLoader) => {
     router.get('/', async ctx => {
       const products = await productsLoader.all()
@@ -6,7 +9,6 @@ module.exports = (router, productsLoader) => {
         products: products
       }
       await ctx.render('home');
-      // Add in user instrumentation
-      newrelic.addCustomAttribute("enduser.id", "audiemoradi@msn.com");
+
     })
   }
