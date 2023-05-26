@@ -6,5 +6,7 @@ module.exports = (router, productsLoader) => {
         products: products
       }
       await ctx.render('home');
+      // Add in user instrumentation
+      newrelic.addCustomAttribute("enduser.id", "audiemoradi@msn.com");
     })
   }
